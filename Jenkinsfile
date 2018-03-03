@@ -3,5 +3,6 @@
 stage 'build'
 node{
     checkout scm
-    sh 'echo hello from groovy'
+    sh 'cat README.md index.html'
+    
 }

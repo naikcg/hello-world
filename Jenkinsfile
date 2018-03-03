@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
-checkout scm
 stage 'build'
-node{    
-    
+node{
+    checkout scm
+    sh 'mvn clean install'
 }

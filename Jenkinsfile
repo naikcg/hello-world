@@ -1,12 +1,12 @@
 #!/usr/bin/env groovy
 
-stage 'build'
+checkout scm
 node{
-    checkout scm
+    stage 'build'
     sh 'cat index.html'
 }
-stage 'deploy'
+
 node{
-    checkout scm
+    stage 'deploy'
     sh 'cat README.md'
 }

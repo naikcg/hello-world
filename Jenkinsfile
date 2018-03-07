@@ -1,7 +1,8 @@
 #!/usr/bin/env groovy
 
-checkout scm
+
 node{
+    checkout scm
     stage 'build'
     sh 'cat index.html'
 }

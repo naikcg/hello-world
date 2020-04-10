@@ -1,2 +1,3 @@
 some text to test
 some more text added
+added from command line
